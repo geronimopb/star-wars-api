@@ -11,6 +11,7 @@ import java.util.Map;
 // Este es el controlador REST que maneja las solicitudes relacionadas con las personas.
 // Proporciona métodos para obtener la lista de personas desde la API de SWAPI
 // y para agregar nuevas personas a la lista local.
+// El controlador utiliza la clase peopleService para interactuar con la API y manejar la lógica de negocio.
 
 @RestController
 @RequestMapping("/api/people")
