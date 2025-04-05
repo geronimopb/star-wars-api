@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Lista de personajes</h1>
+
+  <div class="form">
+    <input type="text" [(ngModel)]="newPerson.name" name="name" placeholder="Nombre" />
+    <input type="text" [(ngModel)]="newPerson.height" name="height" placeholder="Altura" />
+    <button (click)="addPerson()">Agregar</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let person of people">
+      {{ person.name }} ({{ person.height }} cm)
+    </li>
+  </ul>
+</div>
